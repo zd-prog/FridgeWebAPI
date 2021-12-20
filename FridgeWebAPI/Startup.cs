@@ -27,6 +27,7 @@ namespace FridgeWebAPI
             services.ConfigureCors();
             services.ConfigureIISIntegration();
             services.AddLogging();
+            services.ConfigureLoggerService();
 
             services.AddControllers();
             services.AddSwaggerGen(c =>
