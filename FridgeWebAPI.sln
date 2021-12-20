@@ -3,7 +3,11 @@ Microsoft Visual Studio Solution File, Format Version 12.00
 # Visual Studio Version 16
 VisualStudioVersion = 16.0.31205.134
 MinimumVisualStudioVersion = 10.0.40219.1
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "FridgeWebAPI", "FridgeWebAPI\FridgeWebAPI.csproj", "{BC6689EE-4E6B-401F-93A0-EEC18EBA9563}"
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "FridgeWebAPI", "FridgeWebAPI\FridgeWebAPI.csproj", "{BC6689EE-4E6B-401F-93A0-EEC18EBA9563}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Contracts", "Contracts\Contracts.csproj", "{B66870E0-350B-4655-B733-07B2F8D18F08}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "LoggerService", "LoggerService\LoggerService.csproj", "{6BF02A8B-FFAC-49CD-80D0-573D1D540427}"
 EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
@@ -15,6 +19,14 @@ Global
 		{BC6689EE-4E6B-401F-93A0-EEC18EBA9563}.Debug|Any CPU.Build.0 = Debug|Any CPU
 		{BC6689EE-4E6B-401F-93A0-EEC18EBA9563}.Release|Any CPU.ActiveCfg = Release|Any CPU
 		{BC6689EE-4E6B-401F-93A0-EEC18EBA9563}.Release|Any CPU.Build.0 = Release|Any CPU
+		{B66870E0-350B-4655-B733-07B2F8D18F08}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{B66870E0-350B-4655-B733-07B2F8D18F08}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{B66870E0-350B-4655-B733-07B2F8D18F08}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{B66870E0-350B-4655-B733-07B2F8D18F08}.Release|Any CPU.Build.0 = Release|Any CPU
+		{6BF02A8B-FFAC-49CD-80D0-573D1D540427}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{6BF02A8B-FFAC-49CD-80D0-573D1D540427}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{6BF02A8B-FFAC-49CD-80D0-573D1D540427}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{6BF02A8B-FFAC-49CD-80D0-573D1D540427}.Release|Any CPU.Build.0 = Release|Any CPU
 	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE
