@@ -1,0 +1,15 @@
+D:\Study\FridgeWebAPI\LoggerService\bin\Debug\net5.0\Contracts.dll
+D:\Study\FridgeWebAPI\LoggerService\obj\Debug\net5.0\LoggerService.csprojAssemblyReference.cache
+D:\Study\FridgeWebAPI\LoggerService\obj\Debug\net5.0\LoggerService.GeneratedMSBuildEditorConfig.editorconfig
+D:\Study\FridgeWebAPI\LoggerService\obj\Debug\net5.0\LoggerService.AssemblyInfoInputs.cache
+D:\Study\FridgeWebAPI\LoggerService\obj\Debug\net5.0\LoggerService.AssemblyInfo.cs
+D:\Study\FridgeWebAPI\LoggerService\bin\Debug\net5.0\LoggerService.deps.json
+D:\Study\FridgeWebAPI\LoggerService\bin\Debug\net5.0\LoggerService.dll
+D:\Study\FridgeWebAPI\LoggerService\bin\Debug\net5.0\ref\LoggerService.dll
+D:\Study\FridgeWebAPI\LoggerService\bin\Debug\net5.0\LoggerService.pdb
+D:\Study\FridgeWebAPI\LoggerService\bin\Debug\net5.0\Contracts.pdb
+D:\Study\FridgeWebAPI\LoggerService\obj\Debug\net5.0\LoggerService.csproj.CoreCompileInputs.cache
+D:\Study\FridgeWebAPI\LoggerService\obj\Debug\net5.0\LoggerService.csproj.CopyComplete
+D:\Study\FridgeWebAPI\LoggerService\obj\Debug\net5.0\LoggerService.dll
+D:\Study\FridgeWebAPI\LoggerService\obj\Debug\net5.0\ref\LoggerService.dll
+D:\Study\FridgeWebAPI\LoggerService\obj\Debug\net5.0\LoggerService.pdb
