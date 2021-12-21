@@ -2,7 +2,6 @@ D:\Study\FridgeWebAPI\Contracts\bin\Debug\net5.0\Contracts.deps.json
 D:\Study\FridgeWebAPI\Contracts\bin\Debug\net5.0\Contracts.dll
 D:\Study\FridgeWebAPI\Contracts\bin\Debug\net5.0\ref\Contracts.dll
 D:\Study\FridgeWebAPI\Contracts\bin\Debug\net5.0\Contracts.pdb
-D:\Study\FridgeWebAPI\Contracts\obj\Debug\net5.0\Contracts.csprojAssemblyReference.cache
 D:\Study\FridgeWebAPI\Contracts\obj\Debug\net5.0\Contracts.GeneratedMSBuildEditorConfig.editorconfig
 D:\Study\FridgeWebAPI\Contracts\obj\Debug\net5.0\Contracts.AssemblyInfoInputs.cache
 D:\Study\FridgeWebAPI\Contracts\obj\Debug\net5.0\Contracts.AssemblyInfo.cs
