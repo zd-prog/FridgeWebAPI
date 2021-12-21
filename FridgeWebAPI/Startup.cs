@@ -1,6 +1,8 @@
+using Entities;
 using FridgeWebAPI.Extensions;
 using Microsoft.AspNetCore.Builder;
 using Microsoft.AspNetCore.Hosting;
+using Microsoft.EntityFrameworkCore;
 using Microsoft.Extensions.Configuration;
 using Microsoft.Extensions.DependencyInjection;
 using Microsoft.Extensions.Hosting;
@@ -28,6 +30,10 @@ namespace FridgeWebAPI
             services.ConfigureIISIntegration();
             services.AddLogging();
             services.ConfigureLoggerService();
+            services.AddDbContext<RepositoryContext>(options => options.UseSqlServer(Configuration.GetConnectionString("sqlConnection")));
+            services.ConfigureSqlContext(Configuration);
+            services.ConfigureRepositoryManager();
+
 
             services.AddControllers();
             services.AddSwaggerGen(c =>

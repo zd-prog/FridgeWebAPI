@@ -1,0 +1,12 @@
+D:\Study\FridgeWebAPI\Entities\bin\Debug\net5.0\Entities.deps.json
+D:\Study\FridgeWebAPI\Entities\bin\Debug\net5.0\Entities.dll
+D:\Study\FridgeWebAPI\Entities\bin\Debug\net5.0\ref\Entities.dll
+D:\Study\FridgeWebAPI\Entities\bin\Debug\net5.0\Entities.pdb
+D:\Study\FridgeWebAPI\Entities\obj\Debug\net5.0\Entities.csprojAssemblyReference.cache
+D:\Study\FridgeWebAPI\Entities\obj\Debug\net5.0\Entities.GeneratedMSBuildEditorConfig.editorconfig
+D:\Study\FridgeWebAPI\Entities\obj\Debug\net5.0\Entities.AssemblyInfoInputs.cache
+D:\Study\FridgeWebAPI\Entities\obj\Debug\net5.0\Entities.AssemblyInfo.cs
+D:\Study\FridgeWebAPI\Entities\obj\Debug\net5.0\Entities.csproj.CoreCompileInputs.cache
+D:\Study\FridgeWebAPI\Entities\obj\Debug\net5.0\Entities.dll
+D:\Study\FridgeWebAPI\Entities\obj\Debug\net5.0\ref\Entities.dll
+D:\Study\FridgeWebAPI\Entities\obj\Debug\net5.0\Entities.pdb
