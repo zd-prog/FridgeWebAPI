@@ -9,3 +9,7 @@ D:\Study\FridgeWebAPI\Contracts\obj\Debug\net5.0\Contracts.csproj.CoreCompileInp
 D:\Study\FridgeWebAPI\Contracts\obj\Debug\net5.0\Contracts.dll
 D:\Study\FridgeWebAPI\Contracts\obj\Debug\net5.0\ref\Contracts.dll
 D:\Study\FridgeWebAPI\Contracts\obj\Debug\net5.0\Contracts.pdb
+D:\Study\FridgeWebAPI\Contracts\bin\Debug\net5.0\Entities.dll
+D:\Study\FridgeWebAPI\Contracts\bin\Debug\net5.0\Entities.pdb
+D:\Study\FridgeWebAPI\Contracts\obj\Debug\net5.0\Contracts.csprojAssemblyReference.cache
+D:\Study\FridgeWebAPI\Contracts\obj\Debug\net5.0\Contracts.csproj.CopyComplete

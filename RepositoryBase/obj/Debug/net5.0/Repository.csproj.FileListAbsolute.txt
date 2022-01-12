@@ -1,0 +1,17 @@
+D:\Study\FridgeWebAPI\RepositoryBase\bin\Debug\net5.0\Repository.deps.json
+D:\Study\FridgeWebAPI\RepositoryBase\bin\Debug\net5.0\Repository.dll
+D:\Study\FridgeWebAPI\RepositoryBase\bin\Debug\net5.0\ref\Repository.dll
+D:\Study\FridgeWebAPI\RepositoryBase\bin\Debug\net5.0\Repository.pdb
+D:\Study\FridgeWebAPI\RepositoryBase\bin\Debug\net5.0\Contracts.dll
+D:\Study\FridgeWebAPI\RepositoryBase\bin\Debug\net5.0\Entities.dll
+D:\Study\FridgeWebAPI\RepositoryBase\bin\Debug\net5.0\Contracts.pdb
+D:\Study\FridgeWebAPI\RepositoryBase\bin\Debug\net5.0\Entities.pdb
+D:\Study\FridgeWebAPI\RepositoryBase\obj\Debug\net5.0\Repository.csprojAssemblyReference.cache
+D:\Study\FridgeWebAPI\RepositoryBase\obj\Debug\net5.0\Repository.GeneratedMSBuildEditorConfig.editorconfig
+D:\Study\FridgeWebAPI\RepositoryBase\obj\Debug\net5.0\Repository.AssemblyInfoInputs.cache
+D:\Study\FridgeWebAPI\RepositoryBase\obj\Debug\net5.0\Repository.AssemblyInfo.cs
+D:\Study\FridgeWebAPI\RepositoryBase\obj\Debug\net5.0\Repository.csproj.CoreCompileInputs.cache
+D:\Study\FridgeWebAPI\RepositoryBase\obj\Debug\net5.0\Repository.csproj.CopyComplete
+D:\Study\FridgeWebAPI\RepositoryBase\obj\Debug\net5.0\Repository.dll
+D:\Study\FridgeWebAPI\RepositoryBase\obj\Debug\net5.0\ref\Repository.dll
+D:\Study\FridgeWebAPI\RepositoryBase\obj\Debug\net5.0\Repository.pdb

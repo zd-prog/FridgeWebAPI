@@ -13,3 +13,5 @@ D:\Study\FridgeWebAPI\LoggerService\obj\Debug\net5.0\LoggerService.csproj.CopyCo
 D:\Study\FridgeWebAPI\LoggerService\obj\Debug\net5.0\LoggerService.dll
 D:\Study\FridgeWebAPI\LoggerService\obj\Debug\net5.0\ref\LoggerService.dll
 D:\Study\FridgeWebAPI\LoggerService\obj\Debug\net5.0\LoggerService.pdb
+D:\Study\FridgeWebAPI\LoggerService\bin\Debug\net5.0\Entities.dll
+D:\Study\FridgeWebAPI\LoggerService\bin\Debug\net5.0\Entities.pdb
