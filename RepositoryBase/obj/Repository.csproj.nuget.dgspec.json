@@ -32,7 +32,11 @@
         "frameworks": {
           "net5.0": {
             "targetAlias": "net5.0",
-            "projectReferences": {}
+            "projectReferences": {
+              "D:\\Study\\FridgeWebAPI\\Entities\\Entities.csproj": {
+                "projectPath": "D:\\Study\\FridgeWebAPI\\Entities\\Entities.csproj"
+              }
+            }
           }
         },
         "warningProperties": {

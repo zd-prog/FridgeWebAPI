@@ -69,3 +69,5 @@ D:\Study\FridgeWebAPI\FridgeWebAPI\bin\Debug\net5.0\runtimes\win\lib\netstandard
 D:\Study\FridgeWebAPI\FridgeWebAPI\bin\Debug\net5.0\Humanizer.dll
 D:\Study\FridgeWebAPI\FridgeWebAPI\bin\Debug\net5.0\Microsoft.EntityFrameworkCore.Design.dll
 D:\Study\FridgeWebAPI\FridgeWebAPI\bin\Debug\net5.0\Entities.pdb
+D:\Study\FridgeWebAPI\FridgeWebAPI\bin\Debug\net5.0\Repository.dll
+D:\Study\FridgeWebAPI\FridgeWebAPI\bin\Debug\net5.0\Repository.pdb

@@ -14,5 +14,8 @@ namespace Repository
         public FridgeProductsRepository(RepositoryContext repositoryContext) : base(repositoryContext)
         {
         }
+
+        public IEnumerable<FridgeProducts> GetAllFridgeProducts(bool trackChanges) =>
+            FindAll(trackChanges).OrderBy(fp => fp.Product).ToList();
     }
 }

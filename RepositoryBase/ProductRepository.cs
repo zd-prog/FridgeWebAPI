@@ -14,5 +14,8 @@ namespace Repository
         public ProductRepository(RepositoryContext repositoryContext) : base(repositoryContext)
         {
         }
+
+        public IEnumerable<Product> GetAllProducts(bool trackChanges) =>
+            FindAll(trackChanges).OrderBy(p => p.Name).ToList();
     }
 }
