@@ -29,19 +29,27 @@ namespace FridgeWebAPI.Controllers
         [HttpGet]
         public IActionResult GetProducts()
         {
-            try
-            {
+           
                 var products = _repository.Product.GetAllProducts(trackChanges: false);
 
                 var productsDto = _mapper.Map<IEnumerable<ProductDto>>(products);
 
                 return Ok(productsDto);
-            }
-            catch (Exception ex)
+            
+        }
+        [HttpGet("{id}")]
+        public IActionResult GetProduct(Guid id)
+        {
+            var product = _repository.Product.GetProduct(id, trackChanges: false);
+            if (product == null)
             {
-                _logger.LogError($"Something went wrong in the {nameof(GetProducts)} action {ex}");
-
-                return StatusCode(500, "Internal server error");
+                _logger.LogInfo($"Product with id: {id} doesn's exist in the database.");
+                return NotFound();
+            }
+            else
+            {
+                var productDto = _mapper.Map<ProductDto>(product);
+                return Ok(productDto);
             }
         }
     }

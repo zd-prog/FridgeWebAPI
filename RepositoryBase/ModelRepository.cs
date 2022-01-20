@@ -18,5 +18,8 @@ namespace Repository
 
         public IEnumerable<FridgeModel> GetAllModels(bool trackChanges) =>
             FindAll(trackChanges).OrderBy(m => m.Name).ToList();
+
+        public FridgeModel GetModel(Guid modelId, bool trackChanges) =>
+            FindByCondition(m => m.Id.Equals(modelId), trackChanges).SingleOrDefault();
     }
 }

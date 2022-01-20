@@ -15,7 +15,11 @@ namespace Repository
         {
         }
 
-        public IEnumerable<FridgeProducts> GetAllFridgeProducts(bool trackChanges) =>
-            FindAll(trackChanges).OrderBy(fp => fp.Product).ToList();
+        public IEnumerable<FridgeProducts> GetAllFridgeProducts(Guid fridgeId, bool trackChanges) =>
+            FindByCondition(p => p.FridgeId.Equals(fridgeId), trackChanges)
+            .OrderBy(p => p.Product.Name);
+        public FridgeProducts GetFridgeProduct(Guid fridgeId, Guid productId, bool trackChanges) =>
+            FindByCondition(fp => fp.FridgeId.Equals(fridgeId) && fp.ProductId.Equals(productId),
+                trackChanges).SingleOrDefault();
     }
 }

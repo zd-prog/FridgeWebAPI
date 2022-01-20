@@ -28,19 +28,26 @@ namespace FridgeWebAPI.Controllers
         [HttpGet]
         public IActionResult GetFridges()
         {
-            try
+            var fridges = _repository.Fridge.GetAllFridges(trackChanges: false);
+
+            var fridgesDto = _mapper.Map<IEnumerable<FridgeDto>>(fridges);
+            
+            return Ok(fridgesDto);
+        }
+
+        [HttpGet("{id}")]
+        public IActionResult GetFridge(Guid id)
+        {
+            var fridge = _repository.Fridge.GetFridge(id, trackChanges: false);
+            if (fridge == null)
             {
-                var fridges = _repository.Fridge.GetAllFridges(trackChanges: false);
-
-                var fridgesDto = _mapper.Map<IEnumerable<FridgeDto>>(fridges);
-
-                return Ok(fridgesDto);
+                _logger.LogInfo($"Fridge with id: {id} doesn's exist in the database.");
+                return NotFound();
             }
-            catch (Exception ex)
+            else
             {
-                _logger.LogError($"Something went wrong in the {nameof(GetFridges)} action {ex}");
-
-                return StatusCode(500, "Internal server error");
+                var fridgeDto = _mapper.Map<FridgeDto>(fridge);
+                return Ok(fridgeDto);
             }
         }
     }

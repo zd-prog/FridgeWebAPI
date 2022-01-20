@@ -10,5 +10,6 @@ namespace Contracts
     public interface IModelRepository
     {
         IEnumerable<FridgeModel> GetAllModels(bool trackChanges);
+        FridgeModel GetModel(Guid modelId, bool trackChanges);
     }
 }

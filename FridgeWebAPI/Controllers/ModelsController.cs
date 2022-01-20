@@ -28,19 +28,26 @@ namespace FridgeWebAPI.Controllers
         [HttpGet]
         public IActionResult GetModels()
         {
-            try
-            {
                 var models = _repository.Model.GetAllModels(trackChanges: false);
 
                 var modelsDto = _mapper.Map<IEnumerable<ModelDto>>(models);
 
                 return Ok(modelsDto);
-            }
-            catch (Exception ex)
-            {
-                _logger.LogError($"Something went wrong in the {nameof(GetModels)} action {ex}");
+        }
 
-                return StatusCode(500, "Internal server error");
+        [HttpGet("{id}")]
+        public IActionResult GetModel(Guid id)
+        {
+            var model = _repository.Model.GetModel(id, trackChanges: false);
+            if (model == null)
+            {
+                _logger.LogInfo($"Model with id: {id} doesn's exist in the database.");
+                return NotFound();
+            }
+            else
+            {
+                var modelDto = _mapper.Map<ModelDto>(model);
+                return Ok(modelDto);
             }
         }
     }
