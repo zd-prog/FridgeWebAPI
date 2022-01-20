@@ -11,5 +11,6 @@ namespace Contracts
     {
         IEnumerable<FridgeModel> GetAllModels(bool trackChanges);
         FridgeModel GetModel(Guid modelId, bool trackChanges);
+        void CreateModel(FridgeModel model);
     }
 }

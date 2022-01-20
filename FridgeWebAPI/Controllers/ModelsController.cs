@@ -1,6 +1,7 @@
 ﻿using AutoMapper;
 using Contracts;
 using Entities.DataTransferObjects;
+using Entities.Models;
 using Microsoft.AspNetCore.Http;
 using Microsoft.AspNetCore.Mvc;
 using System;
@@ -35,7 +36,7 @@ namespace FridgeWebAPI.Controllers
                 return Ok(modelsDto);
         }
 
-        [HttpGet("{id}")]
+        [HttpGet("{id}", Name = "ModelById")]
         public IActionResult GetModel(Guid id)
         {
             var model = _repository.Model.GetModel(id, trackChanges: false);
@@ -49,6 +50,25 @@ namespace FridgeWebAPI.Controllers
                 var modelDto = _mapper.Map<ModelDto>(model);
                 return Ok(modelDto);
             }
+        }
+
+        [HttpPost]
+        public IActionResult CreateModel([FromBody]ModelForCreationDto model)
+        {
+            if (model == null)
+            {
+                _logger.LogError("ModelForCreationDto object sent from client is null.");
+                return BadRequest("ModelForCreationDto object is null");
+            }
+
+            var modelEntity = _mapper.Map<FridgeModel>(model);
+
+            _repository.Model.CreateModel(modelEntity);
+            _repository.Save();
+
+            var modelToReturn = _mapper.Map<ModelDto>(modelEntity);
+
+            return CreatedAtRoute("ModelById", new { id = modelToReturn.Id }, modelToReturn);
         }
     }
 }

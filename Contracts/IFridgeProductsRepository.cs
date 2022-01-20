@@ -11,5 +11,7 @@ namespace Contracts
     {
         IEnumerable<FridgeProducts> GetAllFridgeProducts(Guid fridgeId, bool trackChanges);
         FridgeProducts GetFridgeProduct(Guid fridgeId, Guid productId, bool trackChanges);
+        void CreateFridgeProduct(Guid FridgeId, FridgeProducts fridgeProduct);
+        void DeleteFridgeProduct(FridgeProducts fridgeProduct);
     }
 }

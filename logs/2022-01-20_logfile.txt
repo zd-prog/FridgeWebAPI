@@ -1,0 +1,1 @@
+2022-01-20 13:13:18.3629 INFO Product with id: 18ce244a-6e8f-46c0-51e9-08d9dbf8ca73 doesn't exist in the database.
