@@ -71,3 +71,9 @@ D:\Study\FridgeWebAPI\FridgeWebAPI\bin\Debug\net5.0\Microsoft.EntityFrameworkCor
 D:\Study\FridgeWebAPI\FridgeWebAPI\bin\Debug\net5.0\Entities.pdb
 D:\Study\FridgeWebAPI\FridgeWebAPI\bin\Debug\net5.0\Repository.dll
 D:\Study\FridgeWebAPI\FridgeWebAPI\bin\Debug\net5.0\Repository.pdb
+D:\Study\FridgeWebAPI\FridgeWebAPI\bin\Debug\net5.0\AutoMapper.dll
+D:\Study\FridgeWebAPI\FridgeWebAPI\bin\Debug\net5.0\AutoMapper.Extensions.Microsoft.DependencyInjection.dll
+D:\Study\FridgeWebAPI\FridgeWebAPI\bin\Debug\net5.0\Microsoft.Extensions.DependencyInjection.Abstractions.dll
+D:\Study\FridgeWebAPI\FridgeWebAPI\bin\Debug\net5.0\Microsoft.Extensions.Options.dll
+D:\Study\FridgeWebAPI\FridgeWebAPI\bin\Debug\net5.0\Microsoft.Extensions.Primitives.dll
+D:\Study\FridgeWebAPI\FridgeWebAPI\bin\Debug\net5.0\System.Runtime.CompilerServices.Unsafe.dll

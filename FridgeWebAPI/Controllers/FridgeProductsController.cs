@@ -10,7 +10,7 @@ using System.Threading.Tasks;
 
 namespace FridgeWebAPI.Controllers
 {
-    [Route("api/[controller]")]
+    [Route("api/fridges/{fridgeid}/products")]
     [ApiController]
     public class FridgeProductsController : ControllerBase
     {
@@ -26,24 +26,41 @@ namespace FridgeWebAPI.Controllers
         }
 
         [HttpGet]
-        public IActionResult GetFridgeProducts()
+        public IActionResult GetFridgeProducts(Guid fridgeId)
         {
-            try
+            var fridge = _repository.Fridge.GetFridge(fridgeId, trackChanges: false);
+            if (fridge == null)
             {
-                var fridgeProducts = _repository.FridgeProducts
-                    .GetAllFridgeProducts(trackChanges: false);
-
-                var fridgeProductsDto = _mapper.Map<IEnumerable<FridgeProductDto>>(fridgeProducts);
-
-                return Ok(fridgeProductsDto);
+                _logger.LogInfo($"Fridge with id: {fridgeId} doesn't exist in the database.");
+                return NotFound();
             }
-            catch (Exception ex)
+
+            var productsFromDb = _repository.FridgeProducts.GetAllFridgeProducts(fridgeId, 
+                trackChanges: false);
+
+            var productsDto = _mapper.Map<IEnumerable<FridgeProductDto>>(productsFromDb);
+            
+            return Ok(productsDto);
+        }
+
+        [HttpGet("{id}")]
+        public IActionResult GetFridgeProduct(Guid fridgeId, Guid id)
+        {
+            var fridge = _repository.Fridge.GetFridge(fridgeId, trackChanges: false);
+            if (fridge == null)
             {
-                _logger.LogError($"Something went wrong in the {nameof(GetFridgeProducts)} " +
-                    $"action {ex}");
-
-                return StatusCode(500, "Internal server error");
+                _logger.LogInfo($"Fridge with id: {fridgeId} doesn't exist in the database.");
+            return NotFound();
             }
+            var productDb = _repository.FridgeProducts.GetFridgeProduct(fridgeId, id, 
+                trackChanges: false);
+            if (productDb == null)
+            {
+                _logger.LogInfo($"Product with id: {id} doesn't exist in the database.");
+                return NotFound();
+            }
+            var product = _mapper.Map<FridgeProductDto>(productDb);
+            return Ok(product);
         }
     }
 }

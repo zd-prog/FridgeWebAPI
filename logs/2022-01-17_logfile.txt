@@ -1,0 +1,7 @@
+2022-01-17 12:06:51.7084 INFO FridgeProduct with id: 00000000-0000-0000-0000-000000000000 doesn's exist in the database.
+2022-01-17 12:08:08.9423 INFO FridgeProduct with id: 00000000-0000-0000-0000-000000000000 doesn's exist in the database.
+2022-01-17 12:08:30.3577 INFO FridgeProduct with id: 00000000-0000-0000-0000-000000000000 doesn's exist in the database.
+2022-01-17 12:09:26.6500 INFO FridgeProduct with id: 00000000-0000-0000-0000-000000000000 doesn's exist in the database.
+2022-01-17 12:09:36.8144 INFO FridgeProduct with id: 00000000-0000-0000-0000-000000000000 doesn's exist in the database.
+2022-01-17 12:36:24.0060 INFO Product with id: 00000000-0000-0000-0000-000000000000 doesn't exist in the database.
+2022-01-17 12:37:45.4290 INFO Product with id: 00000000-0000-0000-0000-000000000000 doesn't exist in the database.
