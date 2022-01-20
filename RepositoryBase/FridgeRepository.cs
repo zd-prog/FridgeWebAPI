@@ -15,6 +15,8 @@ namespace Repository
         {
         }
 
+        public void CreateFridge(Fridge fridge) => Create(fridge);
+
         public IEnumerable<Fridge> GetAllFridges(bool trackChanges) =>
             FindAll(trackChanges).OrderBy(f => f.Name).ToList();
 

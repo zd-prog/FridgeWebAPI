@@ -1,6 +1,7 @@
 ﻿using AutoMapper;
 using Contracts;
 using Entities.DataTransferObjects;
+using Entities.Models;
 using Microsoft.AspNetCore.Http;
 using Microsoft.AspNetCore.Mvc;
 using System;
@@ -37,7 +38,7 @@ namespace FridgeWebAPI.Controllers
                 return Ok(productsDto);
             
         }
-        [HttpGet("{id}")]
+        [HttpGet("{id}", Name = "ProductById")]
         public IActionResult GetProduct(Guid id)
         {
             var product = _repository.Product.GetProduct(id, trackChanges: false);
@@ -51,6 +52,47 @@ namespace FridgeWebAPI.Controllers
                 var productDto = _mapper.Map<ProductDto>(product);
                 return Ok(productDto);
             }
+        }
+
+        [HttpPost]
+        public IActionResult CreateProduct([FromBody] ProductForCreationDto product)
+        {
+            if (product == null)
+            {
+                _logger.LogError("ProductForCreationDto object sent from client is null.");
+                return BadRequest("ProductForCreationDto object is null");
+            }
+
+            var productEntity = _mapper.Map<Product>(product);
+
+            _repository.Product.CreateProduct(productEntity);
+            _repository.Save();
+
+            var productToReturn = _mapper.Map<ProductDto>(productEntity);
+
+            return CreatedAtRoute("ProductById", new { id = productToReturn.Id }, productToReturn);
+        }
+
+        [HttpPut("{id}")]
+        public IActionResult UpdateProduct(Guid id, [FromBody]ProductForUpdateDto product)
+        {
+            if (product == null)
+            {
+                _logger.LogError("ProductForUpdateDto object sent from client is null.");
+                return BadRequest("ProductForUpdateDto object is null");
+            }
+
+            var productEntity = _repository.Product.GetProduct(id, trackChanges: true);
+            if (productEntity == null)
+            {
+                _logger.LogInfo($"Product with id: {id} doesn't exist in the database.");
+                return NotFound();
+            }
+
+            _mapper.Map(product, productEntity);
+            _repository.Save();
+
+            return NoContent();
         }
     }
 }

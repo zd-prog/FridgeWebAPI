@@ -15,6 +15,8 @@ namespace Repository
         {
         }
 
+        public void CreateProduct(Product product) => Create(product);
+
         public IEnumerable<Product> GetAllProducts(bool trackChanges) =>
             FindAll(trackChanges).OrderBy(p => p.Name).ToList();
 

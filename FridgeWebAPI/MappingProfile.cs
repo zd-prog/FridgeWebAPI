@@ -16,6 +16,11 @@ namespace FridgeWebAPI
             CreateMap<Fridge, FridgeDto>();
             CreateMap<FridgeProducts, FridgeProductDto>();
             CreateMap<FridgeModel, ModelDto>();
+            CreateMap<FridgeForCreationDto, Fridge>();
+            CreateMap<ProductForCreationDto, Product>();
+            CreateMap<FridgeProductForCreationDto, FridgeProducts>();
+            CreateMap<ModelForCreationDto, FridgeModel>();
+            CreateMap<ProductForUpdateDto, Product>();
         }
     }
 }

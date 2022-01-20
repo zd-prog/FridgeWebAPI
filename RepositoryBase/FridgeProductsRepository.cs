@@ -15,6 +15,17 @@ namespace Repository
         {
         }
 
+        public void CreateFridgeProduct(Guid fridgeId, FridgeProducts fridgeProduct)
+        {
+            fridgeProduct.FridgeId = fridgeId;
+            Create(fridgeProduct);
+        }
+
+        public void DeleteFridgeProduct(FridgeProducts fridgeProduct)
+        {
+            Delete(fridgeProduct);
+        }
+
         public IEnumerable<FridgeProducts> GetAllFridgeProducts(Guid fridgeId, bool trackChanges) =>
             FindByCondition(p => p.FridgeId.Equals(fridgeId), trackChanges)
             .OrderBy(p => p.Product.Name);
